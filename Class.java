@@ -1,8 +1,10 @@
+import java.util.ArrayList;
+
 public class Class{
 
 
 
-public static void makeAllWordsH(int k, int maxLetter, String word, List<String> list){
+public static void makeAllWordsH(int k, int maxLetter, String word, ArrayList<String> list){
   if ( k < 0){
     list.add(word);
   }
@@ -15,9 +17,9 @@ public static void makeAllWordsH(int k, int maxLetter, String word, List<String>
 
 
 
-public static List<String> makeAllWords(int k, int maxLetter){
-  List<String> l = new List<String>;
-  makeAllWordsH(int k, int maxLetter, String "", List<String> l);
+public static ArrayList<String> makeAllWords(int k, int maxLetter){
+  ArrayList<String> l = new ArrayList<String>();
+  makeAllWordsH(k, maxLetter,"", l);
   return l;
 }
 
